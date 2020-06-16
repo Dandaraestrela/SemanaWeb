@@ -1,0 +1,40 @@
+/*propriedades que podem ser repetidas, p não ficar reescrevendo*/
+:root {
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* faz com que o tamanho seja limitado pela borda (?)*/
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*BOX MODEL, padrão de caixa para CADA elemento/tag 
+cada tipo de elemento tem um tamanho padrão para ele
+por exemplo o "h3" usa a linha inteira e nao pode ter nada
+ao lado dele, já o "a" por ser inline dá p por outro
+elemento inline ao lado dele mas se eu colocar ambos em uma caixa
+diferente tipo tá no div, aí eu mesma posso fazer o modelo  - DISPLAY */
+
+body{
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+a { 
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
+}
+
+
+
+

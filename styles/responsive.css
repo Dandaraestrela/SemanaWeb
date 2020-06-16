@@ -1,0 +1,33 @@
+/* quando tiver menos q 900 faz isso: */
+@media (max-width: 900px){
+    #page-home {
+        background-position-x: 70vw;
+    }
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+    #page-home header a {
+        /*coloca esse elemento acima de todos os outros elementos*/
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        /*faz conseguir pegar o ponto médio, para centralizar*/
+        transform: translateX(-50%);
+    }
+    #page-home main {
+        align-items: center;
+    }
+}
+/*quando tiver mais q isso, a imagem fica fixa em 40*/
+@media (min-width: 1700px){
+    #page-home{
+        background-position-x: 40vw;
+    }
+}
+/*quando tiver menos que isso, coloca o background p onde mandar no y e fica fixo*/
+@media (max-height: 760px){
+    #page-home{
+        background-position-y: 200px;
+    }
+}
