@@ -1,0 +1,65 @@
+<!--isso é para mostrar ao navegador o tipo de documento (html)-->
+<!DOCTYPE html>
+<!--isso é uma tag, maior parte deve ser iniciada e fechada dessa forma sempre
+colocar o lang é só para definir a linguagem da pagina-->
+<html lang="pt_br">
+<head>
+    <!--esse meta faz com que a pagina aceite (no corpo) acentuação-->
+    <meta charset="UTF-8">
+    <!--esse meta faz com que o site caiba em diferentes tamanhos de exbição-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--titulo que vai aparecer em cima da pagina mesmo no navegador-->
+    <title>Resultado da pesquisa</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/search-results.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+
+</head>
+
+<body>
+    <!-- criando uma caixa especifica p organização do codigo 
+    (já que tudo é um tipo de caixa), varias coisas podem ser class-->
+    
+    <div id="page-search-results">
+
+            <header>
+                <img src="/assets/logo.svg" alt="LogoMarca">
+                <a href="/">
+                    <!--esse span vai ser basicamente p por o elemento imagem
+                    tipo outro elemento mesmo na tag a--> 
+                    <span></span>
+                    Voltar para home</a>  
+            </header>
+            <main>
+                <h4>
+                    <strong>2 pontos</strong> encontrados
+                </h4>
+
+                <div class = "cards">
+                    <div class = "card">
+                        <img src="https://images.unsplash.com/photo-1481761289552-381112059e05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1161&q=80" alt="Colectoria">
+                        <h1>Colectoria</h1>
+                        <h3>Resíduos Eletrônicos, Lâmpadas</h3>
+                        <p>Rio do Sul, Santa Catarina <br/> 
+                           Guilherme Gemballa, Jardim América <br/>
+                           Nº 260</p>
+                    </div>
+                    <div class = "card">
+                        <img src="https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1101&q=80" alt="Papersider">
+                        <h1>Papersider</h1>
+                        <h3>Papéis e papelão</h3>
+                        <p>Rio do Sul, Santa Catarina <br/> 
+                           Guilherme Gemballa, Jardim América <br/>
+                           Nº 260</p>
+                    </div>
+                </div>
+            </main>
+
+
+    </div>
+    
+
+</body>
+</html>

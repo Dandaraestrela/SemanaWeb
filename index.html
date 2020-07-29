@@ -21,6 +21,8 @@ colocar o lang é só para definir a linguagem da pagina-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <!-- responsive sempre por último -->
     <link rel="stylesheet" href="/styles/responsive.css">
 
 </head>
@@ -34,7 +36,7 @@ colocar o lang é só para definir a linguagem da pagina-->
         <div class = "content">
             <header>
                 <img src="/assets/logo.svg" alt="LogoMarca">
-                <a href="http://google.com.br">
+                <a href="/create-point.html">
                     <!--esse span vai ser basicamente p por o elemento imagem
                     tipo outro elemento mesmo na tag a--> 
                     <span></span>
@@ -53,7 +55,32 @@ colocar o lang é só para definir a linguagem da pagina-->
 
     </div>
     
-
+    <!-- Vamos criar algo "modal" que significa que na mesma página, quando
+    a pessoa clicar no botão, vai aparecer um conteúdo "por cima" e o modal é o que cobrirá a tela toda -->
+        <div id="modal" class="hide">
+            <div class="content">
+                <div class="header">
+                    <h1>Pontos de Coleta</h1>
+                    <!-- o a parece um botão por conter um hyperlink-->
+                    <a href="#">Fechar</a>
+                </div>
+                <form action="/search-results.html">
+                    <!--esse for referencia o input abaixo-->
+                    <label for="search">Cidade</label>
+                    <div class="search field">
+                        <input 
+                        type="text"
+                        name = "search"
+                        placeholder="Pesquise por cidade">
+                        <button>
+                            <img src="/assets/search.svg" alt="buscar">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- ligando ao script -->
+        <script src="/scripts/index.js"></script>
 
     
 

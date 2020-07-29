@@ -1,0 +1,83 @@
+/* isso será feito p cobrir toda a tela*/
+#modal {
+    /*da para colocar as letras finais utilizando o alpha*/
+    background-color: #0e0a14eF;
+    height: 100vh;
+    width: 100vw;
+    /* essa posição fixa tirou ate o scroll da tela*/
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 400ms;
+}
+/*usa ponto porque é para todo modal com classe hide*/
+#modal.hide{
+    display: none;
+}
+#modal .content{
+    color: white;
+    width: 420px;
+}
+
+#modal .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+#modal .header a{
+    background-image: url("../assets/x.svg");
+    width: 20px;
+    height: 20px;
+    display: flex;
+    /* isso é p manter o "fechar" para um possível leitor de conteúdo
+    para acessibilidade, mas tirar visualmente*/
+    font-size: 0.01px;
+}
+
+#modal .header h1{
+    color: white;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+#modal form label{
+    font-size: 14px;
+    line-height: 16px;
+    /* precisou forçar o display block p conseguir colocar o margin bottom,
+    que não seria aceito pelo form que é inline por padrão */
+    display: block;
+    margin-bottom: 8px;
+}
+
+#modal form .field{
+    display: flex;
+}
+
+#modal form input{
+    /* lembrando q flex faz o elemento pegar todo o espaço que sobra */
+    flex: 1;
+
+    background-color: var(--backgroundUsado);
+    border-radius: 8px 0 0 8px;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #6c6c80;
+}
+
+#modal form button{
+    width: 72px;
+    height: 72px;
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 0 8px 8px 0;
+}
+#modal form button:hover{
+    background-color: #2fb85e;
+}

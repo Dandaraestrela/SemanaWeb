@@ -18,6 +18,12 @@
     #page-home main {
         align-items: center;
     }
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
+    }
+    #page-search-results .card img{
+        height: 250px;
+    }
 }
 /*quando tiver mais q isso, a imagem fica fixa em 40*/
 @media (min-width: 1700px){
